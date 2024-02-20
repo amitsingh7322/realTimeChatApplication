@@ -1,0 +1,7 @@
+package used
+-express
+-dotenv
+-cookie-parser
+-jsonwebtoken
+-bcrypt
+-nodemon
