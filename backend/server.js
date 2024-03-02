@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
+const cors = require('cors');
 
 const authRoute = require("./routes/auth.route");
 const messageRoute = require("./routes/message.route");
@@ -14,6 +15,8 @@ const PORT = process.env.PORT || 8000;
 dotenv.config();
 app.use(express.json()); //to parse incoming request with json payload
 app.use(cookieParser());
+// Enable CORS for all routes
+app.use(cors());
 
 //test route
 app.get("/", (req, res) => {

@@ -10,3 +10,65 @@ package used
 
 tips and tricks
 rafce - to get sample code/structure in pages.
+ctrl shift P -> to reload vs code
+
+Timestamps:
+00:00:00 - Demo App
+00:02:18 - Project Setup
+00:12:20 - Auth Routes Setup
+00:23:20 - MongoDB Setup
+00:28:30 - Create User Model 
+00:32:20 - Sign Up Endpoint
+00:45:00 - Generate JWT 
+00:52:50 - Login Endpoint
+00:56:50 - Logout Endpoint
+00:58:50 - Create Message Model
+01:03:10 - Create Conversation Model
+01:06:15 - Send Message Endpoint
+01:10:11 - Protect Route Middleware
+01:25:10 - Get Messages Endpoint
+01:31:20 - Get Users for Sidebar Endpoint
+01:38:19 - UI Design
+02:27:50 - SignUp Functionality
+02:50:00 - Create AuthContext 
+02:59:00 - Logout Functionality 
+03:03:20 - Login Functionality
+03:11:50 - Get Conversations
+03:29:00 - Send Message Functionality
+03:35:30 - Get Messages
+03:54:00 - Search Conversation
+03:58:20 - Implementing Socket.io
+04:25:22 - Finally Deployment!
+
+Zustand - kind of store, we are using as alternative of context
+
+
+what is usestate
+-> useState is a React Hook , It allows functional components to have local state,
+   enabling them to manage and update stateful data.
+  -> The useState Hook is a function that takes an initial state value as an argument and returns an array with two elements:
+1. The current state value.
+2. A function that allows you to update the state.
+
+e.preventDefault()
+ it is a method commonly used in event handlers to prevent the default
+ behavior of an event. Events in web applications often have default behaviors associated with them.
+  For example, when a form is submitted, the default behavior is to reload the page. 
+  By calling e.preventDefault(),
+ you can prevent this default behavior and handle the event in a custom way.
+
+
+AuthContext
+
+The code snippet export const AuthContext = createContext();
+ is part of setting up a React context in a React application. 
+Let's break down what each part of this line does:
+1.createContext(): This is a function provided by React that creates a new context.
+ A context in React is a way to share values, such as state or functions, 
+ between components without having to pass them explicitly through each level of the component tree. 
+ The createContext() function returns an object with a Provider and a Consumer.
+2.AuthContext: This is a constant that is assigned the result of calling createContext().
+ It represents the context object that will be used to share values related to authentication 
+ throughout your React application.
+ 
+ 
