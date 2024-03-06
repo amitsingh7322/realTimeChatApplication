@@ -16,7 +16,10 @@ dotenv.config();
 app.use(express.json()); //to parse incoming request with json payload
 app.use(cookieParser());
 // Enable CORS for all routes
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}));
 
 //test route
 app.get("/", (req, res) => {

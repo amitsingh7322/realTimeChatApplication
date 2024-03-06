@@ -13,6 +13,7 @@ const useSignin = () => {
         try {
             const res= await fetch('http://localhost:8000/api/auth/signin',{
                 method: "post",
+                credentials: "include",
                 headers: {"Content-Type":"application/json"},
                 body: JSON.stringify({userName,password})
     
