@@ -7,8 +7,9 @@ const authRoute = require("./routes/auth.route");
 const messageRoute = require("./routes/message.route");
 const userRoute = require("./routes/user.route");
 const { connetionMongoDB } = require("./db/connection.MongoDB");
+const { app, server } = require("./socket/socket");
 
-const app = express();
+
 const PORT = process.env.PORT || 8000;
 
 //middlewares
@@ -33,7 +34,7 @@ app.use("/api/users", userRoute);
 // app.use("/api/conversations", authRoute);
 
 //starting server
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   connetionMongoDB();
   console.log(`server runnig on port ${PORT}`);
 });
