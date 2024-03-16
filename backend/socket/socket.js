@@ -12,6 +12,9 @@ const io = new Server(server, {
   }
 });
 
+function getReceiverSocketId(receiverId) {
+  return userSocketMap[receiverId];
+}
 const userSocketMap = {}; //{userId : socketId}
 
 io.on('connection', (socket) => {
@@ -32,4 +35,4 @@ io.emit("getOnlineUsers", Object.keys(userSocketMap));
 });
 
 // Export app and server
-module.exports = { app, server };
+module.exports = { app, server,getReceiverSocketId, io };

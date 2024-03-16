@@ -71,4 +71,16 @@ Let's break down what each part of this line does:
  It represents the context object that will be used to share values related to authentication 
  throughout your React application.
  
+useEffect-> useEffect in React allows you to perform actions in function components that are typically
+ associated with lifecycle methods in class components.
+ useEffect(() => {
+  // Side effect code goes here
+  // This code runs after every render
+
+  return () => {
+    // Cleanup code goes here
+    // This code runs when the component unmounts or when the dependencies change
+  };
+}, [/* dependency array */]);
+
  
