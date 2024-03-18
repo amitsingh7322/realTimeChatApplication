@@ -11,7 +11,7 @@ const useSignin = () => {
         if(!success) return;
     setLoading(true)
         try {
-            const res= await fetch('http://localhost:8000/api/auth/signin',{
+            const res= await fetch('https://chatfreinds.onrender.com/api/auth/signin',{
                 method: "post",
                 credentials: "include",
                 headers: {"Content-Type":"application/json"},

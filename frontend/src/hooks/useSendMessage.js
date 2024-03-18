@@ -8,7 +8,7 @@ const {messages, setMessages, selectedConversation}= useConversation();
     const sendMessage =async(message)=>{
         setLoading(true)
         try {
-            const res = await fetch(`http://localhost:8000/api/messages/send/${selectedConversation._id}`,{
+            const res = await fetch(`https://chatfreinds.onrender.com/api/messages/send/${selectedConversation._id}`,{
                 method: "post",
                 credentials: "include",
                 headers: {"Content-Type":"application/json"},
