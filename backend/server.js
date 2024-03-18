@@ -20,7 +20,7 @@ app.use(express.json()); //to parsse incoming request with json payload
 app.use(cookieParser());
 // Enable CORS for all routes
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['https://chatfreinds.onrender.com', 'http://localhost:3000'],
   credentials: true
 }));
 
