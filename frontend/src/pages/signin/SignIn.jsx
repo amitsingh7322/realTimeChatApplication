@@ -16,10 +16,10 @@ const SignIn = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
-      <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
-        <h1 className="text-3xl fo  nt-semibold text-center text-gray-300">
-          Signin to
-          <span className="text-blue-500"> YourChatApp</span>
+      <div className="h-full p-6 w-full bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30">
+        <h1 className="text-3xl font-semibold text-center text-gray-300">
+          Sign in to
+          <span className="text-gray-700"> ChatFriends</span>
         </h1>
         <form onSubmit={handleSubmit}>
           <div>
@@ -38,7 +38,7 @@ const SignIn = () => {
           </div>
           <div>
           <label className="label p-2">
-            <span className="text-base label-text"> Password</span>
+            <span className="text-base label-text password"> Password</span>
             </label>
             <input
 							type='text'
@@ -58,7 +58,7 @@ const SignIn = () => {
 							 {loading ? (
                 <span className="loading loading-spinner"></span>
               ) : (
-                "Signin"
+                "Sign in"
               )}
 						</button>
             <Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>

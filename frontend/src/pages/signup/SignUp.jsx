@@ -25,9 +25,11 @@ const handleSubmit = async (e)=>{
 }
 	return (
     <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
-      <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
+      <div className="
+h-full p-6 w-full bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30"
+>
         <h1 className="text-3xl font-semibold text-center text-gray-300">
-          Signup to<span className="text-blue-500"> YourChatApp</span>
+          Sign up to<span className="text-gray-700"> ChatFriends</span>
         </h1>
 
         <form onSubmit={handleSubmit}>
@@ -37,7 +39,7 @@ const handleSubmit = async (e)=>{
             </label>
             <input
               type="text"
-              placeholder="John Doe"
+              placeholder="Enter Full Name"
               className="w-full input input-bordered  h-10"
               value={inputs.fullName}
               onChange={(e) =>
@@ -52,7 +54,7 @@ const handleSubmit = async (e)=>{
             </label>
             <input
               type="text"
-              placeholder="johndoe"
+              placeholder="Enter Username"
               className="w-full input input-bordered h-10"
               value={inputs.userName}
               onChange={(e) =>
@@ -104,7 +106,7 @@ const handleSubmit = async (e)=>{
               {loading ? (
                 <span className="loading loading-spinner"></span>
               ) : (
-                "Signup"
+                "Sign up"
               )}
             </button>
           </div>
@@ -121,40 +123,3 @@ const handleSubmit = async (e)=>{
   );
 };
 export default SignUp;
-
-// const SignUp = () => {
-//   return (
-//     <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
-// <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
-// <h1 className="text-3xl fo  nt-semibold text-center text-gray-300">
-//           Signup
-//           <span className="text-blue-500"> YourChatApp</span>
-//         </h1>
-//         <form>
-//         <div>
-//             <label className="label p-2">
-//             <span className="text-base label-text"> Fullname</span>
-//             </label>
-//             <input
-// 							type='text'
-// 							placeholder='Enter fullname'
-// 							className='w-full input input-bordered h-10'
-// 						/>
-//           </div>
-//           <div>
-//             <label className="label p-2">
-//             <span className="text-base label-text"> Username</span>
-//             </label>
-//             <input
-// 							type='text'
-// 							placeholder='Enter username'
-// 							className='w-full input input-bordered h-10'
-// 						/>
-//           </div>
-//         </form>
-// </div>
-//     </div>
-//   )
-// }
-
-// export default SignUp
