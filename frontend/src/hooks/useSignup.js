@@ -23,7 +23,7 @@ const useSignup = () => {
     if (!success) return;
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/api/auth/signup", {
+      const res = await fetch("api/auth/signup", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

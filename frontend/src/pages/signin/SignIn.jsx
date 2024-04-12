@@ -16,10 +16,10 @@ const SignIn = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
-      <div className="h-full p-6 w-full bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30">
+      <div className="h-full p-6  bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-0">
         <h1 className="text-3xl font-semibold text-center text-gray-300">
           Sign in to
-          <span className="text-gray-700"> ChatFriends</span>
+          <span className="text-gray-500"> ChatFriends</span>
         </h1>
         <form onSubmit={handleSubmit}>
           <div>

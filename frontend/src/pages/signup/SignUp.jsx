@@ -25,11 +25,9 @@ const handleSubmit = async (e)=>{
 }
 	return (
     <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
-      <div className="
-h-full p-6 w-full bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30"
->
+      <div className="h-full p-6 w-full bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30">
         <h1 className="text-3xl font-semibold text-center text-gray-300">
-          Sign up to<span className="text-gray-700"> ChatFriends</span>
+          Signup to<span className="text-gray-500"> ChatFriends</span>
         </h1>
 
         <form onSubmit={handleSubmit}>
