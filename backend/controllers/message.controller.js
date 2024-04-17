@@ -36,7 +36,11 @@ exports.sendMessage = async (req, res) => {
     res.status(201).json(newMessage);
   } catch (err) {
     console.log("Error while sendMessage controller: ", err.message);
-    return res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({
+      error: true,
+      message: "Internal server error",
+      data: {}
+    });
   }
 };
 
@@ -52,6 +56,10 @@ exports.getMessage = async (req, res) => {
     return res.status(201).json(messages);
   } catch (err) {
     console.log("Error while getMessage controller: ", err.message);
-    return res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({
+      error: true,
+      message: "Internal server error",
+      data: {}
+    });
   }
 };

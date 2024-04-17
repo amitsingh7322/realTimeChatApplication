@@ -21,11 +21,11 @@ const useSignin = () => {
     const data = await res.json();
     console.log(data)
     if(data.error){
-        throw new Error(data.error);
+        throw new Error(data.message);
     }
     //local-storage context
-    localStorage.setItem("user", JSON.stringify(data));
-    setAuthUser(data);
+    localStorage.setItem("user", JSON.stringify(data.data));
+    setAuthUser(data.data);
         } catch (error) {
             toast.error(error.message)
         }finally{

@@ -6,7 +6,7 @@ package used
 -bcrypt
 -nodemon
 
-
+Do :- npm i, npm run server
 
 tips and tricks
 rafce - to get sample code/structure in pages.

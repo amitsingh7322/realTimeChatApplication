@@ -40,8 +40,8 @@ const useSignup = () => {
         throw new Error(data.error);
       }
       //local-storage context
-      localStorage.setItem("user", JSON.stringify(data));
-      setAuthUser(data);
+      localStorage.setItem("user", JSON.stringify(data.data));
+      setAuthUser(data.data);
     } catch (error) {
       toast.error(error.message);
     } finally {
