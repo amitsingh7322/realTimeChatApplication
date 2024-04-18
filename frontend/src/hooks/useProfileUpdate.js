@@ -25,10 +25,13 @@ const useUserManagement = () => {
           }),
         });
         const data = await res.json();
-        console.log("dataaaaa",data);
+        console.log("dataaaaa", data);
         if (data.error) {
           throw new Error(data.error);
         }
+        //local-storage context
+        localStorage.setItem("user", JSON.stringify(data.data));
+        setAuthUser(data.data);
         return data.message;
         // Update local storage and context with updated user info if needed
       } catch (error) {
